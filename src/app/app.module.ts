@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { ContainerComponent } from './container/container.component';
+import { ColorBoxComponent } from './color-box/color-box.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContainerComponent
+    ContainerComponent,
+    ColorBoxComponent
   ],
   imports: [
     BrowserModule
