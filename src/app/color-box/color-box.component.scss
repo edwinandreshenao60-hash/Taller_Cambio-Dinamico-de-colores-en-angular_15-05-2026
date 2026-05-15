@@ -1,0 +1,15 @@
+.color-square {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  margin: 20px auto;
+  border: 2px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}
