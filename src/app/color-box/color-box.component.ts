@@ -7,21 +7,16 @@ import { Component, Input } from '@angular/core';
   styleUrl: './color-box.component.scss'
 })
 export class ColorBoxComponent {
-  @Input() receivedColor: string = 'Blanco';
+  @Input() receivedColor: string = 'white';
 
-  getColor(color: string): string {
-    if (color === 'Rojo') {
-      return 'red';
-    }
-    if (color === 'Azul') {
-      return 'blue';
-    }
-    if (color === 'Verde') {
-      return 'green';
-    }
-    if (color === 'Amarillo') {
-      return 'yellow';
-    }
-    return 'white';
+  get colorName(): string {
+    const colores: { [key: string]: string } = {
+      'white': 'Blanco',
+      'red': 'Rojo',
+      'blue': 'Azul',
+      'green': 'Verde',
+      'yellow': 'Amarillo'
+    };
+    return colores[this.receivedColor] || 'Blanco';
   }
 }
