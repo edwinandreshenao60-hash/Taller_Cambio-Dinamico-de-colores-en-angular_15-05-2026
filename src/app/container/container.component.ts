@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './container.component.scss'
 })
 export class ContainerComponent {
-  currentColor: string = 'Blanco';
+  colorActual: string = 'white';
 
-  updateColor(color: string): void {
-    this.currentColor = color;
+  changeColor(newColor: string): void {
+    this.colorActual = newColor;
   }
 }

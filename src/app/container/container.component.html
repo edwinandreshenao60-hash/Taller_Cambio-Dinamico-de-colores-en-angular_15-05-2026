@@ -1,6 +1,10 @@
-<app-color-box [receivedColor]="currentColor"></app-color-box>
+<div class="app-wrapper">
+  <app-color-box [receivedColor]="colorActual"></app-color-box>
 
-<app-color-button></app-color-button>
-<app-color-button></app-color-button>
-<app-color-button></app-color-button>
-<app-color-button></app-color-button>
+  <div class="button-group">
+    <app-color-button buttonColor="red" buttonText="Rojo" (colorClicked)="changeColor($event)"></app-color-button>
+    <app-color-button buttonColor="blue" buttonText="Azul" (colorClicked)="changeColor($event)"></app-color-button>
+    <app-color-button buttonColor="green" buttonText="Verde" (colorClicked)="changeColor($event)"></app-color-button>
+    <app-color-button buttonColor="yellow" buttonText="Amarillo" (colorClicked)="changeColor($event)"></app-color-button>
+  </div>
+</div>
