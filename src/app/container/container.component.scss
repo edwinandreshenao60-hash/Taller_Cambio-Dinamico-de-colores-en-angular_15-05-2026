@@ -1,0 +1,19 @@
+.app-wrapper {
+    background-color: #1e1e1e;
+    border: 2px solid #333333;
+    border-radius: 50px;
+    padding: 60px 40px;
+    box-shadow: 0 15px 35px rgba(109, 107, 107, 0.6);
+    min-width: 450px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 40px;
+}
